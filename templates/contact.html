@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arlen's BackEnd - Contact Us</title>
+    </head>
+    <style>
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        h1 {
+            font-family: Arial;
+            color: white;
+        }
+        h3 {
+            font-family: Arial;
+            color: white;
+        }
+        h3:link {
+            font-family: Arial;
+            color: rgb(0, 255, 0);
+        }
+        body {
+            background-color: rgb(25, 25, 25);
+        }
+    </style>
+    <body>
+    <div>
+        <h1>Contact Us!</h1>
+        {% if name == Arlen %}
+        <h3>Name: {{user.name}}</h3>
+        {% else %}
+        <h3>Name: Unknown</h3>
+        {% endif %}
+        <br>
+        <h3>Age: {{user.age}}</h3>
+        <br>
+        {% if user.age < 13 %}
+        <h3>Age Status: Kid</h3>
+        {% elif user.age < 18 and user.age > 12 %}
+        <h3>Age Status: Teen</h3>
+        {% elif user.age >= 18 %}
+        <h3>Age Status: Adult</h3>
+        {% endif %}
+        <br>
+        <h3>Phone Number: </h3><a href='+77026520094'><h3>+77026520094</h3></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href="/home"><button>Back</button></a>
+        </div>
+    </body>
+</html>
+{% endblock %}

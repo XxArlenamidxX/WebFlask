@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arlen's BackEnd - Home</title>
+    </head>
+    <style>
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        h1 {
+            font-family: Arial;
+            color: white;
+        }
+        body {
+            background-color: rgb(25, 25, 25);
+        }
+    </style>
+    <body>
+    <div>
+        <h1>Arlen's BackEnd - Welcome, Arlen!</h1>
+        <a href='https://roblox.com'><button>Roblox</button></a>
+        <a href='https://client.cortexnodes.com'><button>CortexNodes</button></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a href='/home/contact'><button>Contact Us</button></a>
+        <a href="/home/blog"><button>Blog</button></a>
+        <a href="/home/schedule"><button>Schedule</button></a>
+        <a href="/home/form"><button>Submit Form</button></a>
+        <a href="/home/image-preview"><button>Image Displayer</button></a>
+        <a href="/home/profile"><button>Profile</button></a>
+
+        <br><br><br><br><br><br><br><br>
+        <a href='/'><button>Logout</button></a>
+        </div>
+    </body>
+</html>
+{% endblock %}

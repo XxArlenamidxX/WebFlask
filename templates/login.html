@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p></p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arlen's BackEnd - Login</title>
+    </head>
+    <style>
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        h1 {
+            font-family: Arial;
+            color: white;
+        }
+        body {
+            background-color: rgb(25, 25, 25);
+        }
+    </style>
+    <body>
+    <div>
+        <h1>Login</h1>
+        <input type='text' placeholder='Username/Email'>
+        <br>
+        <input type='password' placeholder='Password'>
+        <br>
+        <br>
+        <br>
+        <a href='/home'><button>Login</button></a>
+        <a href='/'><button>Back</button></a>
+        </div>
+    </body>
+</html>
+{% endblock %}
